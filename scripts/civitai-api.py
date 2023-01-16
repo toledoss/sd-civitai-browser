@@ -110,8 +110,8 @@ def download_file(url, file_name):
 
 def download_file_thread(url, file_name, content_type, use_new_folder, model_name):
     if content_type == "Checkpoint":
-        folder = "models/Stable-diffusion"
-        new_folder = "models/Stable-diffusion/new"
+        folder = "/content/models"
+        new_folder = "/content/models/new"
     elif content_type == "Hypernetwork":
         folder = "models/hypernetworks"
         new_folder = "models/hypernetworks/new"
@@ -156,8 +156,8 @@ def download_file_thread(url, file_name, content_type, use_new_folder, model_nam
 
 def save_text_file(file_name, content_type, use_new_folder, trained_words, model_name):
     if content_type == "Checkpoint":
-        folder = "models/Stable-diffusion"
-        new_folder = "models/Stable-diffusion/new"
+        folder = "/content/models"
+        new_folder = "/content/models/new"
     elif content_type == "Hypernetwork":
         folder = "models/hypernetworks"
         new_folder = "models/hypernetworks/new"
